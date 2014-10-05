@@ -1,0 +1,49 @@
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.container {
+  width: 201px;
+  background-color: #000;
+  margin: 30px auto;
+  border-left: 1px solid #000;
+}
+.row div {
+  display: inline-block;
+  text-align: center;
+  line-height: 50px;
+  font-size: 18px;
+}
+.row .screen {
+  height: 60px;
+  width: 200px;
+  text-align: right;
+  line-height: 60px;
+  font-size: 45px;
+  padding-right: 10px;
+}
+.button {
+  background-color: #eee;
+  height: 50px;
+  width: 50px;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  cursor: pointer;
+}
+.button:hover {
+  opacity: 0.9;
+}
+.span2 {
+  width: 100px;
+}
+.span3 {
+  width: 150px;
+}
+.symbol {
+  background-color: orange;
+}
+.symbol,
+.screen {
+  color: #fff;
+}
