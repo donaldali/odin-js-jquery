@@ -1,0 +1,140 @@
+/* Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+header {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+
+/* General */
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.container {
+  width: 601px;
+  margin: 0 auto;
+  color: #333;
+}
+
+/* header */
+header h1 {
+  text-align: center;
+  font: bold 36px/40px arial;
+}
+
+/* state */
+.state {
+  position: relative;
+  padding: 10px;
+  font-size: 18px;
+}
+.state div {
+  display: inline-block;
+}
+.state .score {
+  padding-left: 30px;
+}
+.level span,
+.score span {
+  color: #06f;
+  font-weight: bold;
+}
+.state .message {
+  position: absolute;
+  right: 10px;
+}
+
+/* board */
+.board {
+  background-color: #fafafa;
+  position: relative;
+}
+.row {
+  border-top: 1px solid #aaa;
+  border-left: 1px solid #aaa;
+  height: 15px;
+  width: 601px;
+}
+.board .gamesquare {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-right: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+}
+.snakebody {
+  background-color: #0f0;
+
+}
+.snakehead {
+  background-color: #080;
+}
+.food {
+  background-color: #f22;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+}
+.blank {
+  background-color: #fafafa;
+}
+.gameover {
+  height: 150px;
+  width: 300px;
+  text-align: center;
+  position: absolute;
+  top: 225px;
+  left: 150px;
+  background-color: #fafafa;
+  box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.5);
+}
+.gameover p {
+  font-size: 30px;
+  padding: 20px 0;
+}
+.gameover button {
+  padding: 15px 0;
+  width: 100%;
+  font-size: 25px;
+  border: 1px solid #fff;
+  background-color: #0cc;
+  color: #fff;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+
+}
+.gameover button:hover {
+  border: 1px solid #0cc;
+  background-color: #fff;
+  color: #0cc;
+}
