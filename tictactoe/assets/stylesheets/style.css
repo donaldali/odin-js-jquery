@@ -1,0 +1,107 @@
+/* Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+header {
+  display: block;
+}
+body {
+  line-height: 1;
+  background-color: #fafafa;
+}
+
+/* General */
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.container {
+  width: 390px;
+  margin: 0 auto;
+  text-align: center;
+  color: #333;
+}
+
+/* Header */
+header h1 {
+  font: 36px/40px arial;
+  padding: 10px;
+}
+
+/* Message */
+.message {
+  padding: 10px;
+  font-size: 18px;
+}
+.end-message {
+  font-size: 26px;
+  color: #6bb565;
+}
+.play-again {
+  padding: 10px 20px;
+  width: 100%;
+  font-size: 26px;
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: #a1d3b0;
+  background: -webkit-linear-gradient(#a1d3b0, #6bb565);
+  background:    -moz-linear-gradient(#a1d3b0, #6bb565);
+  background:         linear-gradient(#a1d3b0, #6bb565);
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+  display: none;
+}
+.play-again:hover {
+  background-color: #6bb565;
+  background: -webkit-linear-gradient(#6bb565, #a1d3b0);
+  background:    -moz-linear-gradient(#6bb565, #a1d3b0);
+  background:         linear-gradient(#6bb565, #a1d3b0);
+}
+
+/* Gameboard */
+.gameboard {
+  overflow: hidden;
+  box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.5);
+}
+.gameboard div {
+  background-color: #d9d9d9;
+  width: 130px;
+  height: 130px;
+  float: left;
+  font-size: 80px;
+  line-height: 130px;
+}
+.r-border {
+  border-right: 1px solid #333;
+}
+.b-border {
+  border-bottom: 1px solid #333;
+}
+.winning-square {
+  color: #6bb565;
+}
