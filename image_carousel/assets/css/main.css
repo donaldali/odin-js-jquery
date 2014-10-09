@@ -1,0 +1,155 @@
+/* Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+header {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+
+/* General */
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.container {
+  width: 650px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* header */
+header h1 {
+  font: 36px/40px arial;
+  color: #333;
+  padding: 10px;
+}
+
+/* Images */
+.frame {
+  position: relative;
+  border: 5px solid #333;
+  width: 650px;
+  height: 490px;
+  overflow: hidden;
+}
+.all-images {
+  height: 480px;
+  position: absolute;
+  top: 0;
+  left: -640px;
+}
+.all-images img {
+  position: absolute;
+  top: 0;
+}
+#img1 {
+  left: 640px;
+}
+#img2 {
+  left: 1280px;
+}
+#img3 {
+  left: 1920px;
+}
+#img4 {
+  left: 2560px;
+}
+#img5 {
+  left: 3200px;
+}
+#img-first {
+  left: 3840px;
+}
+.arrow {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  height: 100px;
+}
+.arrow img {
+  height: 100px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.arrow img:hover {
+  opacity: 0.8;
+}
+.left {
+  left: 0;
+}
+.right {
+  right: 0;
+}
+
+/* Preview Images */
+.preview {
+  height: 96px;
+  width: 128px;
+  position: absolute;
+  top: 0;
+  display: none;
+}
+.left .preview {
+  left: 100px;
+}
+.right .preview {
+  right: 100px;
+}
+.preview img {
+  opacity: 0.9;
+  cursor: default;
+}
+.img-preview {
+  height: 96px;
+  width: 128px;
+}
+
+/* Navigation */
+.nav-dots {
+  margin-top: 10px;
+}
+.nav-dots div {
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  margin: 10px;
+  border: 2px solid #252b30;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  cursor: pointer;
+}
+.nav-dots div:hover {
+  opacity: 0.7;
+}
+.active {
+  background-color: #252b30;
+}

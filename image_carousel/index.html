@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Image Carousel</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+  </head>
+  <body>
+    <div class="container">
+      <header><h1>Kittens Carousel</h1></header>
+
+      <div class="frame">
+        <div class="all-images">
+          <img src="assets/images/kittens5.jpg" id="img-last" alt="Four kittens on a tree branch">
+          <img src="assets/images/kittens1.jpg" id="img1" alt="A kitten by flowers">
+          <img src="assets/images/kittens2.jpg" id="img2" alt="An upside down kitten under red furniture">
+          <img src="assets/images/kittens3.jpg" id="img3" alt="Two kittens on a wooden plank amongst flowers">
+          <img src="assets/images/kittens4.jpg" id="img4" alt="Two kittens looking in the distance">
+          <img src="assets/images/kittens5.jpg" id="img5" alt="Four kittens on a tree branch">
+          <img src="assets/images/kittens1.jpg" id="img-first" alt="A kitten by flowers">
+        </div>
+        <div class="arrow left">
+          <img src="assets/images/arrow_left.png" alt="">
+          <div class="preview"></div>
+        </div>
+        <div class="arrow right">
+          <img src="assets/images/arrow_right.png" alt="">
+          <div class="preview"></div>
+        </div>
+
+      </div>
+
+      <div class="nav-dots">
+        <div value="1" class="active"></div>
+        <div value="2"></div>
+        <div value="3"></div>
+        <div value="4"></div>
+        <div value="5"></div>
+      </div>
+    </div>
+
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+    <script src="assets/js/application.js"></script>
+  </body>
+</html>
