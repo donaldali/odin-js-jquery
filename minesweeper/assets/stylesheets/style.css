@@ -1,0 +1,156 @@
+/*
+  ========================================
+  Reset
+  ========================================
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* General */
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body {
+  line-height: 1;
+  background-color: #fafafa;
+}
+.container {
+  width: 164px;
+  margin: 0 auto;
+  text-align: center;
+}
+.game-container {
+  background-color: #c0c0c0;
+  border-top: 2px solid #fcfcfc;
+  border-left: 2px solid #fcfcfc;
+  border-bottom: 2px solid #777;
+  border-right: 2px solid #777;
+  padding: 6px;
+}
+
+/* Menu */
+.menu {
+  padding: 15px 10px 5px 10px;
+  text-align: left;
+  position: relative;
+}
+.menu a {
+  color: #00f;
+  font-size: 18px;
+  text-decoration: none;
+}
+.menu a:hover {
+  text-decoration: underline;
+}
+.menu form {
+  background-color: #6bb565;
+  background: -webkit-linear-gradient(#6bb565, #a1d3b0);
+  background:    -moz-linear-gradient(#6bb565, #a1d3b0);
+  background:         linear-gradient(#ffa800, #f5b232);
+  width: 160px;
+  position: absolute;
+  z-index: 20;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+  display: none;
+}
+form label {
+  display: block;
+  padding-top: 7px;
+  font-size: 17px;
+}
+.custom label {
+  padding-left: 40px;
+  font-size: 15px;
+}
+.custom input {
+  width: 60px;
+  height: 24px;
+  padding-left: 5px;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+}
+input:focus {
+  outline: 0;
+}
+input[type="button"] {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  width: 100%;
+  height: 50px;
+  border: 1px solid #ffa800;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+  background-color: #ffff9e;
+  color: #222;
+  font-size: 22px;
+  text-shadow: 0 1px 0 #fff;
+}
+input[type="button"]:hover {
+  background-color: #fff;
+}
+
+/* Status */
+.status {
+  position: relative;
+  padding: 3px 5px 0px 5px;
+  margin-bottom: 6px;
+  border-top: 2px solid #777;
+  border-left: 2px solid #777;
+  border-bottom: 2px solid #fcfcfc;
+  border-right: 2px solid #fcfcfc;
+}
+.status .mines,
+.status .time {
+  position: absolute;
+}
+.status .mines {
+  top: 4px;
+}
+.status .time {
+  top: 4px;
+  right: 5px;
+}
+
+/* Board */
+.board {
+  border-top: 2px solid #777;
+  border-left: 2px solid #777;
+  border-bottom: 2px solid #fcfcfc;
+  border-right: 2px solid #fcfcfc;
+}
+td img {
+  display: block;
+}

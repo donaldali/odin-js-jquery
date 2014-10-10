@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Minesweeper</title>
+    <link rel="stylesheet" href="assets/stylesheets/style.css">
+    <link rel="icon shortcut" href="assets/images/favicon.ico">
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="menu">
+        <a href="#" id="menu">Game Options</a>
+        <form id="form">
+          <label>
+            <input type="radio" name="gametype" value="beginner" checked> Beginner
+          </label>
+
+          <label>
+            <input type="radio" name="gametype" value="intermediate"> Intermediate
+          </label>
+
+          <label>
+            <input type="radio" name="gametype" value="expert"> Expert
+          </label>
+
+          <label>
+            <input type="radio" name="gametype" value="custom"> Custom
+          </label>
+
+          <div class="custom">
+            <label>
+              Height
+              <input type="number" name="height" min="4" max="40" placeholder="4 - 40">
+            </label>
+
+            <label>
+              Width
+              <input type="number" name="width" min="8" max="60" placeholder="8 - 60">
+            </label>
+
+            <label>
+              Mines
+              <input type="number" name="mines" min="1">
+            </label>
+
+          </div>
+          <input type="button" value="Set Options">
+        </form>
+      </div>
+
+      <div class="game-container">
+        <div class="status">
+          <div class="mines">
+            <img id="mine0" src="assets/images/number/number0.gif"><!--
+         --><img id="mine1" src="assets/images/number/number0.gif"><!--
+         --><img id="mine2" src="assets/images/number/number0.gif">
+          </div>
+          <div class="face">
+            <img src="assets/images/face/facesmile.gif">
+          </div>
+          <div class="time">
+            <img id="time0" src="assets/images/number/number0.gif"><!--
+         --><img id="time1" src="assets/images/number/number0.gif"><!--
+         --><img id="time2" src="assets/images/number/number0.gif">
+          </div>
+        </div>
+        <div class="board">
+          <table>
+            <tbody></tbody>
+          </table>
+        </div>
+        
+      </div> <!-- game-container -->
+    </div>
+
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+    <script src="assets/js/minesweeper.js"></script>
+  </body>
+</html>
