@@ -1,0 +1,36 @@
+/* Reset */
+html, body, div, h1, canvas {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* Miscellaneous */
+body {
+  background-color: #eee;
+}
+div {
+  text-align: center;
+  width: 510px;
+  margin: 0 auto;
+}
+h1 {
+  font: 30px/40px arial, serif;
+  padding: 10px;
+  color: #333;
+}
+.container {
+  position: relative;
+  background-color: green;
+}
+.crosshair {
+  width: 470px;
+  height: 320px;
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  cursor: crosshair;
+}
