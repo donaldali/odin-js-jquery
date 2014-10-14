@@ -1,0 +1,349 @@
+/*
+  ========================================
+  Reset
+  ========================================
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* General style */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body {
+  background-color: #f2f9f6;
+  background-image: -webkit-linear-gradient(top, #deefe9, #f2f9f6);
+  background-image:         linear-gradient(top, #deefe9, #f2f9f6);
+  font-family: "Helvetica Neue", "HelveticaNeue", Helvetica, sans-serif;
+  color: #262c26;
+}
+a {
+  text-decoration: none;
+}
+
+/*
+  ========================================
+  Container
+  ========================================
+*/
+.main-container {
+  width: 950px;
+  padding: 0 130px;
+  margin: 0 auto;
+}
+
+/*
+  ========================================
+  Header
+  ========================================
+*/
+header {
+  width: 690px;
+  height: 94px;
+  position: relative;
+  margin-bottom: 15px;
+}
+.main-logo {
+  position: absolute;
+  bottom: 0;
+}
+.access {
+  position: absolute;
+  bottom: -6px;
+  right: 0;
+}
+.access a {
+  color: #333;
+  font-size: 14px;
+}
+.access li {
+  display: inline-block;
+}
+header li {
+  padding: 0 14px;
+}
+.signup {
+  font-weight: bold;
+}
+.login {
+  border-left: solid 1px #d3d3d3;
+}
+.login a:hover {
+  color: green;
+}
+
+/*
+  ========================================
+  Body
+  ========================================
+*/
+.form-container {
+  background-color: white;
+  box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.2);
+  padding: 43px 20px 50px 50px;
+}
+.form-container h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 40px;
+}
+.form-container section {
+  width: 350px;
+}
+.form-container section,
+.form-container aside {
+  display: inline-block;
+}
+.form-container label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  display: block;
+  padding-bottom: 5px;
+  height: 23px;
+}
+input:focus {
+  outline: 0;
+}
+input[type="email"],
+input[type="password"],
+input[type="text"],
+select {
+  width: 266px;
+  height: 30px;
+  
+  border: 1px solid #ccc;
+  font-family: "Helvetica Neue","HelveticaNeue",Helvetica,sans-serif;
+  padding-left: 5px;
+  font-size: 14px;
+  color: #666;
+  padding: 2px;
+  margin-bottom: 28px;
+}
+.text-input {
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+}
+#zipcode {
+  width: 80px;
+}
+.terms {
+  margin-top: -5px;
+}
+.terms label {
+  color: #666;
+  font-weight: normal;
+  font-size: 13px;
+}
+.terms a {
+  font-size: 14px;
+  font-weight: normal;
+  color: #006ea4;
+}
+.terms a:hover {
+  text-decoration: underline;
+}
+.terms label {
+  display: inline-block;
+}
+input[type="submit"] {
+  margin-top: 38px;
+  color: white;
+  background-color: #fbb450;
+  background-image: -webkit-linear-gradient(top, #fbb450, #f89406);
+  background-image:         linear-gradient(top, #fbb450, #f89406);
+  border: 1px solid;
+  border-top-color: #f89406;
+  border-right-color: #f89406;
+  border-left-color: #f89406;
+  border-bottom-color: #ad6704;
+  width: 72px;
+  height: 30px;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* aside */
+.form-container aside {
+  width: 224px;
+  height: 528px;
+  border-left: solid 1px #d3d3d3;
+  vertical-align: top;
+  margin-left: 38px;
+}
+.why-join {
+  background-color: #f5f5f5;
+  color: #555;
+  font-size: 14px;
+  margin-left: 25px;
+  height: 180px;
+  padding: 30px 22px 30px 25px;
+}
+.why-join h2 {
+  font-size: 20px;
+  color: #666;
+  padding-bottom: 10px;
+  font-weight: 500;
+}
+.why-join ul {
+  padding-left: 15px;
+}
+.why-join li {
+  list-style-type: disc;
+  font-size: 11px;
+  line-height: 1.2em;
+}
+.why-join a {
+  color: #555;
+  text-decoration: underline;
+}
+
+/*
+  ========================================
+  Footer
+  ========================================
+*/
+footer {
+  text-align: center;
+  width: 690px;
+  height: 186px;
+}
+nav {
+  padding: 20px 0;
+}
+nav li {
+  display: inline-block;
+  padding: 0 12px;
+  font: 200 11px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+footer a {
+  color: #666;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+footer img {
+  height: 60px;
+}
+footer img:first-child{
+  padding-right: 30px;
+}
+footer p {
+  color: #999;
+  font: 200 11px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-top: 20px;
+}
+
+/*
+  ========================================
+  Validation
+  ========================================
+*/
+form > div {
+  position: relative;
+}
+.form-container label.error {
+  color: #bd1a00;
+  font: 200 11px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  position: absolute;
+  bottom: 3px;
+}
+.terms label.error {
+  color: #bd1a00;
+  top: 21px;
+  left: 3px;
+}
+.form-container input.error {
+  border-color: #bd1a00;
+}
+
+/* Submit error */
+.title {
+  position: relative;
+}
+.submit-error {
+  color: #bd1a00;
+  font-weight: bold;
+  position: absolute;
+  top: 50px;
+  display: none;
+}
+
+/* Submit success */
+.message {
+  color: #3f9f3f;
+  background-color: #deefe9;
+  width: 500px;
+  height: 100px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -250px;
+  font: 400 22px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+.message p {
+  padding-top: 15px;
+}
+.message p:last-child {
+  font-weight: bold;
+}
