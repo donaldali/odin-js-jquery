@@ -6,4 +6,4 @@ Ajax requests are made to the [Open Movie Database (OMDB) API](http://www.omdbap
 
 ---
 
-[Preview Infinite Scroll here](http://htmlpreview.github.io/?https://github.com/donaldali/odin-js-jquery/blob/master/ajax_infinite_scroll/index.html "Infinite Scroll with AJAX").
+[Preview Infinite Scroll here](http://htmlpreview.github.io/?https://github.com/donaldali/odin-js-jquery/blob/master/ajax_infinite_scroll/index.html "Infinite Scroll with AJAX"). *For some reason most of the images don't display on htmlpreview.github.io (which is used for this preview)*
