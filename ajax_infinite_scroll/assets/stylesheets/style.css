@@ -1,0 +1,149 @@
+/*
+  ========================================
+  Reset
+  ========================================
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/*
+  ========================================
+  Custom styles
+  ========================================
+*/
+body {
+  background-color: #fbfbfb;
+  line-height: 1;
+  color: #555;
+  font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.container {
+  width: 800px;
+  text-align: center;
+  margin: 0 auto;
+}
+h1 {
+  font-weight: bold;
+  font-size: 40px;
+  padding-top: 10px;
+  text-shadow: 1px 1px 1px #222;
+}
+h5 {
+  font: bold 16px times, serif;
+  padding: 3px;
+}
+em {
+  font-style: italic;
+}
+ul {
+  list-style: none;
+}
+li {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-top: 1px solid #666;
+}
+li > div {
+  display: inline-block;
+  width: 300px;
+}
+.info {
+  width: 450px;
+  vertical-align: top;
+  margin-left: 15px;
+  text-align: left;
+}
+.info > div {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.info .top {
+  padding-top: 10px;
+}
+.title {
+  font-weight: bold;
+  font-size: 22px;
+  color: #222;
+  padding-right: 5px;
+}
+.year {
+  font-size: 14px;
+}
+.top,
+.middle {
+  font-size: 12px;
+  border-bottom: 1px solid #ddd;
+}
+.top p {
+  padding-top: 10px;
+}
+.rated {
+  font-weight: bold;
+  padding: 1px 3px;
+  border: 1px solid #888;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+}
+.rated,
+.runtime {
+  color: #888;
+}
+.rating {
+  font-weight: bold;
+}
+.votes,
+.metascore {
+  color: #000;
+}
+.meta {
+  padding-left: 10px;
+}
+.bottom p {
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.bottom .plot,
+.bottom span {
+  font-weight: normal;
+}
+
+.loading {
+  padding: 15px;
+  margin-bottom: 15px;
+  border-top: 1px solid #666;
+  display: none;
+}
+.loading img {
+  position: relative;
+  top: 2px;
+}
+.loading span {
+  padding-left: 3px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #222;
+}

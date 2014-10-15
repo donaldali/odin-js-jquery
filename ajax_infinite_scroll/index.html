@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Infinite Scroll with Ajax</title>
+    <link rel="stylesheet" href="assets/stylesheets/style.css">
+    <link rel="icon shortcut" href="assets/images/favicon.ico">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Movies Infinite Scroll</h1>
+      <h5><em>Scroll down to see more movies</em></h5>
+
+      <div class="movies">
+        <ul>
+        </ul>
+      </div>
+
+      <div class='loading'>
+        <img src="assets/images/loading.gif">
+        <span>Loading...</span>
+      </div>
+    </div>
+
+    <script id="template" type="text/x-handlebars-template">
+      <li class="movie">
+        <div>
+          <img class="poster" src="{{Poster}}">
+        </div>
+        <div class="info">
+          <div class="top">
+            <span class="title">{{Title}}</span>
+            <span class="year">({{Year}})</span>
+            <p>
+              <span class="rated">{{Rated}}</span>
+              <span class="runtime">{{Runtime}}</span> -
+              <span class="genre">{{formatGenre Genre}}</span> -
+              <span class="released">{{Released}}</span>
+            </p>
+          </div>
+
+          <div class="middle">
+            <p>
+              Ratings: <span class="rating">{{imdbRating}}</span>/10 from 
+              <span class="votes">{{imdbVotes}}</span> users <span class="meta">
+              Metascore: <span class="metascore">{{Metascore}}</span>/100</span>
+            </p>
+          </div>
+
+          <div class="bottom">
+            <p class="plot">{{Plot}}</p>
+            <p>Director: <span class="director">{{Director}}</span></p>
+            <p>Writers: <span class="writer">{{Writer}}</span></p>
+            <p>Stars: <span class="actors">{{Actors}}</span></p>
+          </div>
+        </div>
+      </li>
+    </script>
+
+    <script src="assets/js/handlebars-v2.0.0.js"></script>
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+    <script src="assets/js/application.js"></script>
+  </body>
+</html>
